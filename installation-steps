@@ -1,0 +1,24 @@
+**As part of the prerequisites of the Cloudera Distribution Hadoop project is necessary to install MySQL version 5.7.29. and setup High Availabily (HA) on the databases servers.**_
+
+**The below document describe step by step how to install MySQL 5.7.29**
+
+### General Steps:
+
+1. Installation of MySQL in the Edge Nodes (2 servers).
+2. Modify and setup the parameters in the database ( update my.cnf file).
+3. Configuring High Availability (HA) on the seconday node. 
+4. Creationg of the master users.
+5. Run (slave) in the secondary node.
+6. Creation of the Databases and users for Cloudera.
+7. Validation of the databases and users created.
+
+## Installation of MySQL in the Edge Nodes (2 servers).
+
+**Prerequisities:**
+
+The installation needs a user with root permissions.
+
+Set up the proxy enverioment variables before install.
+
+1. Create a folder named "mysql" and add 777 permissions.
+
